@@ -1,0 +1,48 @@
+<html lang="pt-pt">
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+</html>
+
+<html>
+<head>
+    <style>
+body {
+  background-image: url("/static/imag/soldier.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-right: 0px;
+  background-size:120%;
+  background-attachment:fixed;
+}
+    </style>
+</head>
+</html>
+{% extends 'layout.html' %}
+{% block conteudo %}
+<title>Criar Nova Conta</title>
+
+<center>
+    <br>
+    <br>
+    <br>
+    <font color="black">
+        <h1>Alterar a Palavra-Passe</h1>
+        <form method="post">
+            <fieldset>
+                <h3>Utilizador</h3>
+                <input type="text" name="usr" required>
+                <p><br></p>
+                <h3>Nova Palavra-Passe</h3>
+                <input type="password" name="pwd" required>
+                <p><br></p>
+                <h3>Confirma a NovaPasse</h3>
+                <input type="password" name="cpwd" required>
+                <p><br></p>
+                <input type="submit" value="Nova Password">
+            </fieldset>
+        </form>
+        {% if erro %}
+        <h3>{{ erro }}</h3>
+        {% endif %}
+    </font>
+</center>
+{% endblock %}

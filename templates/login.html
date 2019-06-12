@@ -1,0 +1,47 @@
+<html lang="pt-pt">
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+</html>
+
+<html>
+<head>
+    <style>
+body {
+  background-image: url("/static/imag/tracer.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-right: 0px;
+  background-size:119%;
+  background-attachment:fixed;
+}
+    </style>
+</head>
+</html>
+{% extends 'layout.html' %}
+{% block conteudo %}
+<title>Criar Nova Conta</title>
+<br>
+<br>
+<br>
+<center>
+    <font color="black">
+        <h1>Iniciar Sessão</h1>
+        <form method="post">
+            <fieldset>
+                <h3>Utilizador</h3>
+                <input type="text" name="usr" required>
+                <p><br></p>
+                <h3>Palavra-Passe</h3>
+                <input type="password" name="pwd" required>
+                <p><br></p>
+                <input type="submit" value="Login!">
+                <br>
+                <br>
+                <a href="newpass"></i> Alterar Passe</a>
+            </fieldset>
+        </form>
+        {% if erro %}
+        <h3>{{ erro }}</h3>
+        {% endif %}
+    </font>
+</center>
+{% endblock %}
