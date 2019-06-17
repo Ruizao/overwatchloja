@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% block titulo %}
+<title>Jogo do Galo</title>
+{% endblock %}
+
+{% block conteudo %}
+<style>
+body {
+  background-image: url("/static/wing.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-right: 0px;
+  background-size:121%;
+  background-attachment:fixed;
+}
+</style>
+<script src="/static/sk.js"></script>
+<center>
+    <h1>Jogo do Galo</h1>
+    <a href="JavaScript:f(0)"><img src="/static/galo/nada.png"></a>
+    <a href="JavaScript:f(1)"><img src="/static/galo/nada.png"></a>
+    <a href="JavaScript:f(2)"><img src="/static/galo/nada.png"></a><br>
+    <a href="JavaScript:f(3)"><img src="/static/galo/nada.png"></a>
+    <a href="JavaScript:f(4)"><img src="/static/galo/nada.png"></a>
+    <a href="JavaScript:f(5)"><img src="/static/galo/nada.png"></a><br>
+    <a href="JavaScript:f(6)"><img src="/static/galo/nada.png"></a>
+    <a href="JavaScript:f(7)"><img src="/static/galo/nada.png"></a>
+    <a href="JavaScript:f(8)"><img src="/static/galo/nada.png"></a><br>
+    <br>
+    <br>
+    <font color="#dce3ef">
+        <input type="button" value="Começar a Rodada!" style="width: 200px; height: 35px" onclick="JavaScript:reset()">
+</center>
+        <br>
+        <br>
+        <br>
+        <br>
+
+{% endblock %}

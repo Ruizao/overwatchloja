@@ -127,6 +127,9 @@ def apagar():
             erro = 'Conta eliminada com Sucesso.'
     return render_template('delete.html', erro=erro)
 
+@app.route('/galo')
+def galo():
+    return render_template('galo.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
