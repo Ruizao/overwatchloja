@@ -58,6 +58,9 @@ def eliminar(v1):
     ficheiro.close()
     return
 
+@app.route('/video')
+def video():
+    return render_template('video.html')
 
 @app.route('/newpass', methods=['POST', 'GET'])
 def newpass():
